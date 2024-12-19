@@ -2,11 +2,12 @@
 Realiza un diagrama de fases de la red utilizando criterios sobre la configuracion de spines
 """
 import numpy as np
-from path_manager import PathManager
-from data_manager import DataManager
-from plotter import Plotter
+from source.path_manager import PathManager
+from source.data_manager import DataManager
+from source.plotter import Plotter
 
 if __name__ == "__main__":
+    # contiene la información de los archivos de entrada y salida para PathManager
     NAMES = {
         "dir_prefix" : "spins/J5/min_files/",
         "file_prefix" : "out",
@@ -17,6 +18,7 @@ if __name__ == "__main__":
         "output_image" : "testing.png",
     }
 
+    # Contiene el rango en que varía cada parámetro del diagrama de fases
     # OJO, arange excluye término final, además debe usar enteros
     # para entregar resultados consistentes
     VARIABLES = {

@@ -2,7 +2,7 @@
 Realiza un gráfico 3D de la red de spines mediante VPython
 """
 
-from graph_maker import GraphMaker
+from source.graph_maker import GraphMaker
 
 if __name__ == "__main__":
 
